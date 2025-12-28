@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-12-21T16:04:35.406354",
+  "target": "scanme.nmap.org",
+  "command": "nmap -oX - -sV -sC scanme.nmap.org",
+  "hosts": {
+    "45.33.32.156": {
+      "hostname": "scanme.nmap.org",
+      "state": "up",
+      "services": [
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "ssh",
+          "product": "OpenSSH",
+          "version": "6.6.1p1 Ubuntu 2ubuntu2.13"
+        },
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "2.4.7"
+        },
+        {
+          "port": 9929,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "nping-echo",
+          "product": "Nping echo",
+          "version": ""
+        },
+        {
+          "port": 31337,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "tcpwrapped",
+          "product": "",
+          "version": ""
+        }
+      ]
+    }
+  }
+}
